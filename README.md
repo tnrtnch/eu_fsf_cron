@@ -6,7 +6,7 @@ Due to known limitations and inconsistencies with GitHub Actions `schedule` even
 
 ---
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
 
 eu_fsf_cron (this repo)<br />
@@ -27,7 +27,7 @@ This design ensures:
 
 ---
 
-## ⏰ Schedule
+## Schedule
 
 The workflow is triggered automatically via GitHub Actions:
 
@@ -36,7 +36,7 @@ The workflow is triggered automatically via GitHub Actions:
 
 ---
 
-## 🔔 What This Repo Does
+## What This Repo Does
 
 - Runs on a schedule
 - Calls GitHub API using `repository_dispatch`
@@ -47,7 +47,7 @@ This repo is **control-plane only**.
 
 ---
 
-## 🔐 Required Secrets
+## Required Secrets
 
 The following repository secret must be configured:
 
@@ -55,13 +55,13 @@ The following repository secret must be configured:
 |------------|-------------|
 | `WORKER_REPO_TOKEN` | GitHub Personal Access Token with `repo` permissions |
 
-> ⚠️ The token must belong to a user that has **write access** to the worker repository.
+> The token must belong to a user that has **write access** to the worker repository.
 
 ---
 
-## 📡 Triggered Repository
+## Triggered Repository
 
-- **Worker repo:** `eu-fsf-sanctions`
+- **Worker repo:** `eu_fsf_sanc`
 - Responsible for:
   - Downloading EU FSF data
   - Validating schema
@@ -70,7 +70,7 @@ The following repository secret must be configured:
 
 ---
 
-## ✅ Why This Approach?
+## Why This Approach?
 
 GitHub Actions `schedule` events:
 - May silently stop triggering
@@ -81,12 +81,8 @@ This external cron-trigger pattern is a **known, battle-tested workaround** used
 
 ---
 
-## 🛠 Manual Trigger
+## Manual Trigger
 
 You can manually trigger the cron workflow from the **Actions** tab for testing purposes.
 
 ---
-
-## 📄 License
-
-MIT
