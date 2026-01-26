@@ -13,10 +13,10 @@ EU-FSF-CRON (this repo)
 └── GitHub Actions (schedule)
 └── GitHub API (repository_dispatch)
 └── eu_fsf_sanc (worker repo)
-|   ├── Scrapy spider
-|   ├── Validation & pipelines
-|   ├── JSON output generation
-    └── Auto commit & push
+├── Scrapy spider
+├── Validation & pipelines
+├── JSON output generation
+└── Auto commit & push
 
 
 This design ensures:
