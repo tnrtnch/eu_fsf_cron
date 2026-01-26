@@ -9,7 +9,7 @@ Due to known limitations and inconsistencies with GitHub Actions `schedule` even
 ## 🧠 Architecture Overview
 
 
-EU-FSF-CRON (this repo)<br />
+eu_fsf_cron (this repo)<br />
 └── GitHub Actions (schedule)<br />
 └── GitHub API (repository_dispatch)<br />
 └── eu_fsf_sanc (worker repo)<br />
