@@ -9,14 +9,14 @@ Due to known limitations and inconsistencies with GitHub Actions `schedule` even
 ## 🧠 Architecture Overview
 
 
-EU-FSF-CRON (this repo)
-└── GitHub Actions (schedule)
-└── GitHub API (repository_dispatch)
-└── eu_fsf_sanc (worker repo)
-├── Scrapy spider
-├── Validation & pipelines
-├── JSON output generation
-└── Auto commit & push
+EU-FSF-CRON (this repo)<br />
+└── GitHub Actions (schedule)<br />
+└── GitHub API (repository_dispatch)<br />
+└── eu_fsf_sanc (worker repo)<br />
+├── Scrapy spider<br />
+├── Validation & pipelines<br />
+├── JSON output generation<br />
+└── Auto commit & push<br />
 
 
 This design ensures:
