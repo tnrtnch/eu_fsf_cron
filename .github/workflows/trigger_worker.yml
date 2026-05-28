@@ -2,7 +2,7 @@ name: Trigger EU FSF Worker
 
 on:
   schedule:
-    - cron: "0 2 * * *"   # every hour
+    - cron: "0 2 * * *"   # Daily
   workflow_dispatch:
 
 jobs:
